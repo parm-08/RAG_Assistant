@@ -105,3 +105,9 @@ Key Features
 -Send prompt to LLM
 
 -Generate final response
+
+<img width="1040" height="206" alt="image" src="https://github.com/user-attachments/assets/4b3b2f04-bfeb-4158-a3e3-67cdb912dd14" />
+
+<img width="1477" height="181" alt="image" src="https://github.com/user-attachments/assets/07096b68-3fae-4cf0-9898-4d74bd7bc4db" />
+
+
