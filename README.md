@@ -100,8 +100,8 @@ Key Features
 
 - Context-aware AI answers
 
-📦 Efficient embedding storage
+- Efficient embedding storage
 
-Send prompt to LLM
+-Send prompt to LLM
 
-Generate final response
+-Generate final response
