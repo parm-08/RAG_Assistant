@@ -1,91 +1,64 @@
-🧠 RAG AI Teaching Assistant
+# RAG AI Teaching Assistant
 
 An end-to-end Retrieval-Augmented Generation (RAG) based AI Teaching Assistant that processes educational video content and enables intelligent question answering over transcribed lectures.
 
 This system converts videos → audio → transcripts → embeddings → semantic retrieval → LLM-generated responses.
 
-🚀 Project Overview
+ Project Overview
 
 This assistant allows users to:
 
-Upload lecture videos
+-Upload lecture videos
 
-Automatically transcribe audio
+-Automatically transcribe audio
 
-Convert transcripts into embeddings
+-Convert transcripts into embeddings
 
-Store vectors efficiently
+-Store vectors efficiently
 
-Retrieve relevant lecture content
+-Retrieve relevant lecture content
 
-Generate context-aware answers using an LLM
+-Generate context-aware answers using an LLM
 
-It is designed to act as a personal AI tutor over your own learning materials.
+-It is designed to act as a personal AI tutor over your own learning materials.
 
-🏗️ Project Pipeline
+ Project Pipeline
 Step 1 – Collect Videos
-
 Move all your lecture/video files into the audios/ or designated input folder.
 
 Step 2 – Convert Video to MP3
-
 Run:
-
 video_to_mp3.py
-
-
 This converts all video files into MP3 format for transcription.
 
 Step 3 – Convert MP3 to JSON (Transcription)
-
 Run:
-
 mp3_to_json.py
 
-
 This:
-
 Uses Whisper for speech-to-text
-
 Converts audio into structured JSON transcripts
-
 Stores transcripts inside the jsons/ folder
 
 Step 4 – Convert JSON to Vector Embeddings
-
 Run:
-
 preprocess_json.py
 
-
 This:
-
 Reads transcript JSON files
-
 Splits text into chunks
-
 Generates embeddings
-
 Saves results into embeddings.joblib
-
 The joblib file contains:
-
 Text chunks
-
 Corresponding embeddings
 
 Step 5 – Retrieval + Prompt + LLM Response
-
 When a user asks a question:
-
 Load embeddings.joblib
-
 Convert user query into embedding
-
 Perform similarity search
-
 Retrieve top-k relevant chunks
-
 Construct prompt using retrieved context
 
 Project Structure
@@ -107,31 +80,25 @@ RAG_BASED_ASSISTANT/
 └── readme.md
 
 
-Tech Stack
-
+TECH STACK
 Python
-
 Whisper (Speech-to-Text)
-
 FAISS / Vector similarity search
-
 LLaMA 3.2 (LLM)
-
 Joblib (Embedding storage)
-
 NumPy / Pandas
 
-🎯 Key Features
+Key Features
 
-🎥 Lecture video processing
+- Lecture video processing
 
-🎙️ Automatic transcription
+- Automatic transcription
 
-🧩 Smart chunking strategy
+- Smart chunking strategy
 
-🔎 Semantic search retrieval
+- Semantic search retrieval
 
-🤖 Context-aware AI answers
+- Context-aware AI answers
 
 📦 Efficient embedding storage
 
